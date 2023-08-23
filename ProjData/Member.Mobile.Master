@@ -1,0 +1,23 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Member.Mobile.master.vb" Inherits="coopApp.Member_Mobile" %>
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
+            
+        </div>
+    </form>
+</body>
+</html>
